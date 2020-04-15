@@ -104,7 +104,7 @@ footer {
   width: 800px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
   #circle1 {
     height: 90vh;
     width: 50vw;
