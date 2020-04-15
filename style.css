@@ -39,6 +39,8 @@ footer {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .circle {
   height: 30px;
@@ -86,8 +88,8 @@ footer {
   bottom: 0;
 }
 #circle1 {
-  height: 700px;
-  width: 700px;
+  height:800px;
+  width: 800px;
 }
 #circle2 {
   height: 400px;
@@ -104,7 +106,7 @@ footer {
   width: 800px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
   #circle1 {
     height: 90vh;
     width: 50vw;
@@ -123,4 +125,15 @@ footer {
     height: 90vh;
     width: 50vw;
   }
+}
+.upper{
+  text-transform: uppercase;
+}
+.body-content{
+  color: white;
+ 
+  padding: 50px;
+  font-size: 2em;
+  align-items: center;
+  z-index: 999999;
 }
