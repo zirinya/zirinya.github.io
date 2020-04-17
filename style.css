@@ -148,6 +148,12 @@ footer {
   padding: 8px;
   transition: ease-in 0.2s;
 }
+.active {
+  transition: ease-in 0.2s;
+  border-radius: 5px;
+  box-shadow: -1px 2px 8px -3px rgba(0, 0, 0, 0.39);
+  padding: 10px;
+}
 .menu-hover:hover,
 .simg:hover {
   border-radius: 5px;
@@ -247,13 +253,14 @@ footer {
 }
 .hobbies-list {
   display: flex;
- 
-  margin-top: 8px;padding: 10px;
+
+  margin-top: 8px;
+  padding: 10px;
   text-align: center;
-  justify-content: center; font-size: 10px;
+  justify-content: center;
+  font-size: 10px;
   font-weight: 600;
   flex-wrap: wrap;
-
 }
 .hobbles-list-item {
   width: 70px;
@@ -263,8 +270,6 @@ footer {
   padding: 10px;
   margin-right: 8px;
   margin-bottom: 8px;
- 
-
 
   box-shadow: -1px 1px 14px -8px rgb(20, 34, 73);
 }
@@ -273,17 +278,42 @@ footer {
   width: 100%;
   height: 100%;
 }
-@media(max-width:800px){
+@media (max-width: 800px) {
   .profile-main {
-flex-direction: column;
-padding: 8px;
+    flex-direction: column;
+    padding: 8px;
   }
   .hobbies-canvas {
-width: 100%;
+    width: 100%;
   }
   .canvas {
     width: 100%;
     flex-direction: column;
   }
-
+}
+.proflie {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 16px;
+  padding: 96px 70px;
+}
+.profile-list {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+@media (max-width: 1024px) {
+  .proflie {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .proflie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .proflie {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
