@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <style>
+      form {
+        width: auto;
+        border: 1px solid lightgray;
+        padding: 16px;
+        border-radius: 5px;
+      }
+
+      /* input,select{ width: 100%;} */
+      .flex {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+      }
+      .width {
+        width: 100%;
+      }
+      .flex2 {
+        display: flex;
+        flex-direction: row;
+      }
+      .wrapper {
+        width: 30%;
+        margin: 0 auto;
+      }
+      input,
+      select {
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        padding: 4px 8px;
+
+        box-sizing: border-box;
+      }
+      input[type=number]{
+          width: 50px;
+      }
+      .button {
+        padding: 8px 16px;
+        margin: 8px;
+        background-color: orangered;
+        border: none;
+        color: white;
+        font-weight: 700;
+      }
+      label{
+          margin-bottom: 10px;
+      }
+      @media (max-width: 1025px){
+        .wrapper {
+        width: 500px
+      }
+      }
+      @media (max-width: 500px){
+        .wrapper {
+        width: 310px
+      }
+      form {
+  
+    
+        padding: 0px;
+        
+      }
+      }
+          
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <form action="">
+          <div class="flex2">
+            <div class="flex width">
+              <label for="fly">Flying to</label>
+              <select name="fly">
+                <option value="thailand">thailand</option>
+                <option value="hongkong">hongkong</option>
+                <option value="taiwan">taiwan</option>
+                <option value="uk">uk</option>
+              </select>
+            </div>
+            <div class="flex width">
+              <label for="to">To</label>
+              <select name="to">
+                <option value="thailand">thailand</option>
+                <option value="hongkong">hongkong</option>
+                <option value="taiwan">taiwan</option>
+                <option value="uk">uk</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex2">
+            <div class="flex width">
+              <label for="depart">Depart</label>
+              <input type="date" />
+            </div>
+            <div class="flex width">
+              <label for="return">Returning</label>
+              <input type="date" />
+            </div>
+          </div>
+
+          <div class="flex2">
+            <div class="flex">
+              <label for="adult">Adult</label> <input type="number" />
+            </div>
+            <div class="flex">
+              <label for="child">Child</label> <input type="number" />
+            </div>
+            <div class="flex">
+              <label for="infant">Infant</label> <input type="number" />
+            </div>
+            <div class="flex">
+              <label for="cur">Currency</label>
+              <select name="cur">
+                <option value="PKR">PKR</option>
+                <option value="BATH">BATH</option>
+                <option value="YEN">YEN</option>
+              </select>
+            </div>
+          </div>
+          <input type="button" value="Search" class="button" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
