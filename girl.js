@@ -6,11 +6,11 @@
           { transform: ' rotate(-5deg)'  },
           { transform: 'rotate(5deg)'}, 
         ], {
-          duration:500, //milliseconds
-          easing: 'ease-in-out', //'linear', a bezier curve, etc.
-          delay: 2, //milliseconds
-          iterations: 4, //or a number
-          direction: 'alternate', //'normal', 'reverse', etc.
-          fill: 'forwards' //'backwards', 'both', 'none', 'auto'
+          duration:500,
+          easing: 'ease-in-out',
+          delay: 2, 
+          iterations: 4,
+          direction: 'alternate', 
+          fill: 'forwards' 
         });
   
