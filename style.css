@@ -14,7 +14,7 @@ footer {
   width: 100%;
 
   align-items: center;
-  padding: 40px;
+  padding: 20px;
 }
 .nav-link li,
 li {
@@ -333,7 +333,7 @@ footer {
 }
 .darker{
 
-background-color: white;
+background-color: white;box-shadow: -1px 2px 8px -3px rgba(0, 0, 0, 0.39);
 }
 
 main .wrapperResume{
@@ -342,14 +342,15 @@ main .wrapperResume{
   justify-content: center;
   flex-wrap: wrap;
   height: 90vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   width: 100%;
  
 }
 .Resume{
   /* border:1px solid ; */
-  margin-top: 150px;
+  margin-top: 100px;
 display: flex;
+box-shadow: -1px 2px 8px -3px rgba(0, 0, 0, 0.39);
  
 }
 @media(min-width:1024px){
