@@ -343,8 +343,8 @@ main .wrapperResume{
   flex-wrap: wrap;
   height: 90vh;
   overflow: scroll;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+ 
 }
 .Resume{
   /* border:1px solid ; */
