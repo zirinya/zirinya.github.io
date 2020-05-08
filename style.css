@@ -154,6 +154,12 @@ footer {
   box-shadow: -1px 2px 8px -3px rgba(0, 0, 0, 0.39);
   padding: 10px;
 }
+.active2 {
+  transition: ease-in 0.2s;
+  border-radius: 5px;
+  box-shadow: -1px 2px 8px -3px rgb(39, 36, 243);
+  padding: 10px;
+}
 .menu-hover:hover,
 .simg:hover {
   border-radius: 5px;
@@ -317,8 +323,59 @@ footer {
   .proflie {
     grid-template-columns: repeat(1, 1fr);
   }
+  .darker{
+    flex-direction: column;
+  }
+  nav {
+
+  padding: 10px;
+}
 }
 .darker{
 
 background-color: white;
+}
+
+main .wrapperResume{
+  /* border :1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  overflow: scroll;
+  width: 90%;
+  margin: 0 auto;
+}
+.Resume{
+  /* border:1px solid ; */
+  margin-top: 150px;
+display: flex;
+ 
+}
+@media(min-width:1024px){
+  .downloadme{
+    display: none;
+  }
+}
+
+
+
+@media(max-width:1024px){
+
+  .Resume{
+display: none;
+  }  
+  .downloadme{
+    display: flex;
+    align-items: center;
+
+  }
+  .downloadme a{
+    display: block;
+
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: navy;
+  }
 }
